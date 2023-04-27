@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Inter:wght@700&display=swap');
-@import url('table.css');
+
 
 /* No tocar... */
 * {
@@ -290,6 +290,60 @@ footer {
     }
 }
 
+@media screen and (max-width:415px) {
+    body {
+        min-height: 175vh;
+    }
+
+    .txt_entrada {
+        font-size: 30px;
+
+    }
+    .encriptar,
+    .desencriptar {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .salida {
+        margin: 280px auto;
+        min-width: 90%;
+        height: 110px;
+        border-radius: 20px;
+        margin-bottom: 800px;
+    }
+
+    .subTitulo {
+        padding: 5px 10px;
+        width: 90%;
+        height: 25px;
+        font-size: 22px;
+        margin-top: 260px;
+        margin-bottom: 40px;
+    }
+
+    .contenedor_secundario {
+        margin: 300px auto;
+        border: 1px solid;
+        width: auto;
+        height: 70%;
+    }
+
+    .txt_salida {
+        margin: 0;
+        width: 94%;
+        height: 100%;
+    }
+
+    .copy{
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+}
 
 @media screen and (max-width:375px) {
     body {
