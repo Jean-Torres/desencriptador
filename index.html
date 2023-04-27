@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo.png" alt="logo de la app">
+    </header>
+
+    <main>
+        <section class="entrada">
+            <textarea class="txt_entrada" placeholder="Ingrese el texto aquí" id="entrada"></textarea>
+            <h4 id="mensaje_alert"> <img src="/img/Vector.png"> Solo letras minúsculas y sin acentos</h4>
+            <div class="contenedor_botones">
+                <button id="btnencriptar" class="encriptar">Encriptar</button>
+                <button id="btndesencriptar" class="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="salida" id="section_salida">
+            <div class="imagen">
+                <img src="img/Muñeco.png" alt="Img" id="muñeco">
+            </div>
+
+            <div class="subTitulo" id="subTitulo">
+                <h3>No se encontro ningun mensaje</h3>
+            </div>
+
+            <div class="parrafo" id="parrafo">
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div id="contenedor_secundario" class="contenedor_secundario">
+                <textarea class="txt_salida" id="salida" readonly></textarea>
+                <div class="contenedor_btn_copy" id="contenedor_btn_copy">
+                    <button class="copy" id="btncopiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Creado por jean Torres</h3>
+        <div class="sociales">
+            <a class="icono_linkedin" href=""><img
+                    src="img/icons8-linkedin-24.png" style="width: 25px; margin-top: 5px;"></a>
+            <a class="icon-github" href=""><img src="img/icons8-github-24.png"
+                    style="width: 25px; margin-top: 5px;"></a>
+        </div>
+    </footer>
+    <script src="desecriptador.js"></script>
+
+</body>
+
+</html>
