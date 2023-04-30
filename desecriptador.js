@@ -4,7 +4,9 @@ var boton3 = document.querySelector("#btncopiar");
 var txtSalida = document.querySelector("#salida");
 
 var encriptado = '';
-var letras = 'ABCDEFGHIJKLMNOÑPQRSTUVWXYZáéíóúÁÉÍÓÚ';
+var letras = 'ABCDEFGHIJKLMNOÑPQRSTUVWXYZáéíóúÁÉÍÓÚ|!"#$%&/()=?¡¿´¨*+]}{[,;.:-><°\_@^`';
+letras += "'";
+
 var validador = 0;
 
 boton1.addEventListener('click', function () {
@@ -18,7 +20,6 @@ boton1.addEventListener('click', function () {
             }
         }
     }
-
     if (validador == 0) {
         if (texto == '') {
             retroceder_diseño();
@@ -161,3 +162,5 @@ function retroceder_diseño() {
     $contend = document.getElementById('contenedor_secundario');
     $contend.style.display = 'none';
 }
+
+// para que me asepte los nuevos cammbios.
